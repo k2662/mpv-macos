@@ -15,7 +15,7 @@ jobs:
       matrix:
         os:
           - "macos-26"
-          - "macos-26-large"
+          - "macos-15-intel"
         cc:
           - "clang"
         cxx:
@@ -23,7 +23,7 @@ jobs:
         include:
           - os: "macos-26"
             arch: "arm64"
-          - os: "macos-26-large"
+          - os: "macos-15-intel"
             arch: "x86_64"
     steps:
       - name: Download MPV source code
